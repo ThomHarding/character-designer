@@ -12,5 +12,5 @@ export function makeStatsString(headCount, middleCount, bottomCount) {
     } else {
         bottomCount += ' times';
     }
-    return 'You clicked on the head ' + headCount + ', on the middle ' + middleCount + ', and on the bottom ' + bottomCount + '. And everybody loves your character\'s catchphrases.';
+    return 'You clicked on the head ' + headCount + ', on the middle ' + middleCount + ', and on the bottom ' + bottomCount + '. And everybody loves your character\'s catchphrases:';
 }
