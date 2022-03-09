@@ -24,7 +24,7 @@ headDropdown.addEventListener('change', () => {
     // increment the head change count state
     headChanges++;
     // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-    let headPath = './assets/' + headValue.toLowerCase() + '-head.png';
+    let headPath = 'url(./assets/' + headValue.toLowerCase() + '-head.png)';
     headEl.style.backgroundImage = headPath;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
     displayStats();
@@ -37,7 +37,7 @@ middleDropdown.addEventListener('change', () => {
     // increment the middle change count state
     midChanges++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
-    let midPath = './assets/' + midValue.toLowerCase() + '-middle.png';
+    let midPath = 'url(./assets/' + midValue.toLowerCase() + '-middle.png)';
     middleEl.style.backgroundImage = midPath;
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
     displayStats();
@@ -50,8 +50,8 @@ bottomDropdown.addEventListener('change', () => {
     // increment the bottom change count state
     botChanges++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-    let botPath = './assets/' + botValue.toLowerCase() + '-pants.png';
-    bottomEl.style.backgroundImage = botPath;
+    let botPath = 'url(./assets/' + botValue.toLowerCase() + '-pants.png)';
+    bottomEl.style.backgroundImage = (botPath);
     // update the stats to show the new count (refactor to/call displayStats() to do this work)
     displayStats();
 });
