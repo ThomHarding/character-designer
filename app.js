@@ -83,6 +83,7 @@ function displayCatchphrases() {
     // create an HTML element with the catchphrase as its text content
         let newPhrase = document.createElement('div');
         newPhrase.textContent = phrase;
+        newPhrase.classList.add('catchphrase');
     // and append that HTML element to the cleared-out DOM
         catchphrasesEl.appendChild(newPhrase);
     }
